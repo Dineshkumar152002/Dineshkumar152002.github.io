@@ -1,178 +1,241 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Dineshkumar Saravanan — SRE / DevOps Engineer portfolio">
-<title>Dineshkumar S | SRE / DevOps Engineer</title>
+<meta name="description" content="Dineshkumar Saravanan — Site Reliability Engineer | Azure | Kubernetes | DevOps">
+<title>Dineshkumar Saravanan | SRE / DevOps Engineer</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="nav">
-  <a class="brand" href="#home">DS<span>.</span></a>
-  <div class="navlinks">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
-    <a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<header id="home" class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="eyebrow">SRE / DEVOPS ENGINEER</div>
-      <h1>Keeping applications<br><span>reliable in production.</span></h1>
-      <p class="lead">Dineshkumar Saravanan — SRE-focused engineer with 2+ years of experience at TCS in application reliability, Azure/AKS operations, Kubernetes troubleshooting, observability and incident management.</p>
-      <div class="actions">
-        <a class="btn primary" href="#experience">Explore experience</a>
-        <a class="btn" href="assets/DineshkumarSaravanan_Resume.pdf" download>Download resume</a>
-      </div>
-      <div class="quick"><span>☁ Azure / AKS</span><span>☸ Kubernetes</span><span>◉ Dynatrace</span><span>⌁ Splunk</span></div>
-    </div>
-    <div class="terminal">
-      <div class="term-top"><i></i><i></i><i></i><span>~/dineshkumar</span></div>
-      <pre><span class="muted">$</span> kubectl get pods
-NAME                 READY   STATUS
-api-service          1/1     Running
-worker-service       1/1     Running
-
-<span class="muted">$</span> systemctl status reliability
-<span class="ok">● operational</span>
-
-<span class="muted">$</span> echo "observe → diagnose → restore"
-<span class="cyan">observe → diagnose → restore</span></pre>
-    </div>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="#top">D<span>S</span></a>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#education">Education</a>
+      <a href="#certification">Certification</a>
+    </nav>
+    <a class="nav-resume" href="assets/DineshkumarSaravanan_Resume.pdf" download>Resume ↓</a>
   </div>
 </header>
 
-<main>
-<section id="about" class="section">
-  <div class="section-label">01 / PROFILE</div>
-  <div class="two-col">
-    <div><h2>Application reliability<br>with an operations mindset.</h2></div>
-    <div>
-      <p>I work across application monitoring, incident response, Kubernetes troubleshooting and operational support. My day-to-day work involves turning alerts and application symptoms into actionable investigation paths, coordinating restoration and documenting the root cause.</p>
-      <p>My strongest hands-on areas are Azure/AKS, Kubernetes operations, Dynatrace, Splunk, Azure Application Insights, Linux, REST API troubleshooting and production incident management.</p>
+<main id="top">
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">SITE RELIABILITY ENGINEER · AZURE · KUBERNETES · DEVOPS</div>
+    <h1>Dineshkumar<br><span>Saravanan</span></h1>
+    <p class="hero-text">Site Reliability and Application Operations Engineer with 2+ years of experience supporting enterprise applications on Microsoft Azure and Azure Kubernetes Service (AKS).</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#experience">View experience</a>
+      <a class="button" href="assets/DineshkumarSaravanan_Resume.pdf" download>Download resume</a>
+    </div>
+    <div class="contact-strip">
+      <span>Chennai, Tamil Nadu, India</span>
+      <a href="tel:+918870463065">+91 8870463065</a>
+      <a href="mailto:dineshjooy@gmail.com">dineshjooy@gmail.com</a>
+      <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noreferrer">LinkedIn</a>
     </div>
   </div>
-  <div class="stats">
-    <div><strong>2+</strong><span>Years at TCS</span></div>
-    <div><strong>100+</strong><span>P2/P3 incidents handled</span></div>
-    <div><strong>99%</strong><span>SLA adherence</span></div>
-    <div><strong>AKS</strong><span>Cloud platform exposure</span></div>
+</section>
+
+<section id="summary" class="section">
+  <div class="section-head"><span>01</span><h2>Professional Summary</h2></div>
+  <div class="summary-grid">
+    <p>Experienced in production monitoring, incident response, service restoration, root cause analysis (RCA), SLA-driven operations, release validation, and application troubleshooting. Resolved 100+ production P2/P3 incidents while consistently meeting a 99% SLA target.</p>
+    <p>Hands-on with Dynatrace, Splunk, Azure Application Insights, Azure Log Stream, ServiceNow, Docker, Kubernetes, GitHub Actions, Argo CD, Terraform, Ansible, Linux, Bash, REST APIs, and MongoDB through production operations and an independent SRE/DevOps project.</p>
+  </div>
+  <div class="metrics">
+    <div><strong>2+</strong><small>Years of experience</small></div>
+    <div><strong>100+</strong><small>P2/P3 incidents resolved</small></div>
+    <div><strong>99%</strong><small>SLA target</small></div>
+    <div><strong>10+ hrs</strong><small>Weekly effort automated</small></div>
   </div>
 </section>
 
 <section id="experience" class="section">
-  <div class="section-label">02 / EXPERIENCE</div>
-  <div class="role">
-    <div class="role-top">
-      <div><div class="company">TCS</div><h3>Site Reliability Engineer (SRE)</h3><p>Application Reliability & Operations</p></div>
-      <div class="period">2+ YEARS</div>
+  <div class="section-head"><span>02</span><h2>Professional Experience</h2></div>
+  <article class="experience">
+    <div class="experience-title">
+      <div>
+        <p class="company">TATA CONSULTANCY SERVICES (TCS) · HUMANA INC.</p>
+        <h3>Application Reliability &amp; Operations Engineer (SRE)</h3>
+      </div>
+      <div class="date">June 2024 — Present</div>
     </div>
-    <div class="role-body">
-      <div>
-        <h4>Production reliability</h4>
-        <ul>
-          <li>Monitored application health, availability, errors, latency and infrastructure signals across production environments.</li>
-          <li>Investigated incidents involving HTTP errors, service degradation, latency and application failures, driving issues toward restoration.</li>
-          <li>Performed incident triage, impact assessment, escalation and cross-team coordination while working within SLA targets.</li>
-          <li>Participated in root-cause analysis and post-incident review activities, documenting findings and corrective actions.</li>
-        </ul>
+
+    <div class="experience-list">
+      <div class="exp-item">
+        <div class="num">01</div>
+        <div><h4>Production Monitoring &amp; Reliability</h4><p>Monitored enterprise production applications across Dynatrace, Splunk, Azure Application Insights, and AKS to identify service-impacting issues and drive incidents from initial response through resolution.</p></div>
       </div>
-      <div>
-        <h4>Azure & Kubernetes</h4>
-        <ul>
-          <li>Worked with Azure Kubernetes Service (AKS) environments and investigated workloads, pods, deployments, services, events and logs.</li>
-          <li>Used <code>kubectl</code> for pod/log/event investigation and service-level troubleshooting.</li>
-          <li>Worked with Kubernetes networking concepts including Services, Ingress and NodePort while troubleshooting application reachability.</li>
-          <li>Supported release validation and rollback coordination when application changes affected service behavior.</li>
-        </ul>
+      <div class="exp-item">
+        <div class="num">02</div>
+        <div><h4>Incident Management &amp; RCA</h4><p>Resolved 100+ P2/P3 production incidents through log analysis, application troubleshooting, and root cause analysis, consistently meeting a 99% SLA target.</p></div>
       </div>
-      <div>
-        <h4>Observability & troubleshooting</h4>
-        <ul>
-          <li>Used Dynatrace for service health, response-time, error-rate, workload and infrastructure monitoring.</li>
-          <li>Used Splunk and Azure Application Insights / Log Stream to correlate application logs and investigate failures.</li>
-          <li>Investigated alerts such as high latency, long garbage collection, elevated errors and dependency/API-related degradation.</li>
-          <li>Used dashboards, logs, metrics and traces together rather than relying on a single signal during RCA.</li>
-        </ul>
+      <div class="exp-item">
+        <div class="num">03</div>
+        <div><h4>Service Restoration &amp; SLA Management</h4><p>Managed incident SLAs from response through resolution by prioritizing service restoration, coordinating technical teams, tracking timelines, and communicating status to stakeholders.</p></div>
       </div>
-      <div>
-        <h4>API & operational tooling</h4>
-        <ul>
-          <li>Validated REST APIs and application behavior using Postman and Swagger UI.</li>
-          <li>Worked with ServiceNow-based incident/change workflows, runbooks and operational documentation.</li>
-          <li>Maintained clear incident updates and collaborated with application, infrastructure and other support teams.</li>
-          <li>Focused on reducing time-to-diagnosis and restoring service safely before moving to permanent corrective actions.</li>
-        </ul>
+      <div class="exp-item">
+        <div class="num">04</div>
+        <div><h4>ServiceNow &amp; Post-Incident Reviews</h4><p>Handled incidents end-to-end in ServiceNow, including triage, service restoration, resolution, stakeholder communication, SLA tracking, and post-incident reviews (PIRs).</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">05</div>
+        <div><h4>Azure &amp; Kubernetes Operations</h4><p>Supported production workloads on Azure Kubernetes Service (AKS) through pod health checks, log analysis, deployment verification, and container-level troubleshooting.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">06</div>
+        <div><h4>Performance &amp; Application Troubleshooting</h4><p>Diagnosed performance bottlenecks and service degradation by correlating telemetry, metrics, logs, and monitoring dashboards across distributed application components.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">07</div>
+        <div><h4>Release &amp; API Validation</h4><p>Validated production releases through post-deployment health checks, smoke testing, REST API validation, and application health verification using Postman and Swagger/OpenAPI.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">08</div>
+        <div><h4>Change &amp; Emergency Change Management</h4><p>Managed production Change Requests (CRs) and Emergency Change Requests (ECRs), including approvals, implementation coordination, validation, and post-change health checks.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">09</div>
+        <div><h4>Cross-functional Collaboration</h4><p>Worked with development, infrastructure, database, and support teams to investigate production issues, restore services, and prevent recurrence through documented corrective actions.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">10</div>
+        <div><h4>Automation &amp; Operational Improvements</h4><p>Automated an internal email workflow using Microsoft Power Automate, eliminating more than 10 hours of manual effort per week.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">11</div>
+        <div><h4>Azure Log Stream &amp; Certificate Management</h4><p>Performed real-time Azure Log Stream analysis for live application troubleshooting and managed certificate renewal activities across Azure environments to avoid certificate-related service disruptions.</p></div>
+      </div>
+      <div class="exp-item">
+        <div class="num">12</div>
+        <div><h4>Documentation &amp; Runbooks</h4><p>Authored operational runbooks and knowledge-base documentation to standardize troubleshooting and reduce resolution time for recurring incidents.</p></div>
       </div>
     </div>
-  </div>
-  <div class="flow">
-    <span>Alert</span><b>→</b><span>Impact assessment</span><b>→</b><span>Logs + metrics</span><b>→</b><span>Root cause</span><b>→</b><span>Restore</span><b>→</b><span>RCA / prevention</span>
+  </article>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-head"><span>03</span><h2>Technical Skills</h2></div>
+  <div class="skills">
+    <div class="skill">
+      <div class="skill-number">01</div>
+      <h3>Cloud &amp; Platform</h3>
+      <div class="skill-tags"><span>Microsoft Azure</span><span>Azure Kubernetes Service (AKS)</span><span>Kubernetes</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">02</div>
+      <h3>Containers</h3>
+      <div class="skill-tags"><span>Docker</span><span>Docker Compose</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">03</div>
+      <h3>SRE &amp; Reliability</h3>
+      <div class="skill-tags"><span>Incident Response</span><span>Service Restoration</span><span>RCA</span><span>SLA/SLO Operations</span><span>On-Call Support</span><span>PIR</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">04</div>
+      <h3>Monitoring &amp; Observability</h3>
+      <div class="skill-tags"><span>Dynatrace</span><span>Splunk</span><span>Azure Application Insights</span><span>Azure Log Stream</span><span>Logs</span><span>Metrics</span><span>Telemetry</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">05</div>
+      <h3>CI/CD &amp; GitOps</h3>
+      <div class="skill-tags"><span>Git</span><span>GitHub</span><span>GitHub Actions</span><span>Argo CD</span><span>CI/CD Pipelines</span><span>GitOps</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">06</div>
+      <h3>Infrastructure &amp; Automation</h3>
+      <div class="skill-tags"><span>Terraform — Fundamentals</span><span>Ansible</span><span>IaC</span><span>Power Automate</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">07</div>
+      <h3>Production &amp; ITSM</h3>
+      <div class="skill-tags"><span>ServiceNow</span><span>CR / ECR</span><span>Release Validation</span><span>Smoke Testing</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">08</div>
+      <h3>Programming &amp; APIs</h3>
+      <div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>JavaScript</span><span>Java</span><span>REST APIs</span><span>Postman</span><span>Swagger / OpenAPI</span><span>Python Fundamentals</span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-number">09</div>
+      <h3>Databases &amp; OS</h3>
+      <div class="skill-tags"><span>MongoDB</span><span>Linux</span><span>Bash</span></div>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="section-label">03 / ENGINEERING TOOLKIT</div>
-  <div class="tool-grid">
-    <div><span class="tool-icon">☸</span><h3>Kubernetes / AKS</h3><p>Pods, Deployments, Services, ConfigMaps, Ingress, NodePort, logs, events and workload troubleshooting.</p></div>
-    <div><span class="tool-icon">◉</span><h3>Observability</h3><p>Dynatrace, Splunk, Azure Application Insights, alert investigation, dashboards, logs and performance analysis.</p></div>
-    <div><span class="tool-icon">▣</span><h3>Cloud & Linux</h3><p>Azure fundamentals, AKS operations, Linux/Bash and practical production troubleshooting.</p></div>
-    <div><span class="tool-icon">⇄</span><h3>Delivery & Automation</h3><p>Git/GitHub, Docker, Argo CD, GitHub Actions, Ansible and Terraform fundamentals.</p><small>Argo CD, Ansible and Terraform are also part of my ongoing hands-on learning.</small></div>
-    <div><span class="tool-icon">⌁</span><h3>API & Operations</h3><p>Postman, Swagger UI, REST APIs, ServiceNow, incident management, SLA tracking, RCA and runbooks.</p></div>
-    <div><span class="tool-icon">{} </span><h3>Development</h3><p>Python fundamentals, Node.js/Express, JavaScript, SQL and embedded C/C++ exposure through projects.</p></div>
+<section id="project" class="section">
+  <div class="section-head"><span>04</span><h2>Featured Project</h2></div>
+  <article class="project">
+    <div class="project-top">
+      <div><p class="company">PERSONAL SRE / DEVOPS PROJECT</p><h3>Employee Operations Portal</h3></div>
+      <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+    <p class="project-intro">A hands-on application and DevOps project built to understand the complete path from backend development to containerization, orchestration, CI/CD, and GitOps.</p>
+    <div class="project-points">
+      <p><b>01</b> Built a modular RESTful backend using Node.js, Express.js, and MongoDB following MVC architecture.</p>
+      <p><b>02</b> Developed and validated REST APIs using Postman and Swagger/OpenAPI, including API documentation and functional testing.</p>
+      <p><b>03</b> Containerized the application and database using Docker and Docker Compose, configuring custom networking and persistent storage volumes.</p>
+      <p><b>04</b> Implemented a GitHub Actions CI/CD pipeline to automate application build, test, and deployment stages.</p>
+      <p><b>05</b> Implemented GitOps-based Kubernetes deployment with Argo CD, synchronizing Kubernetes manifests from Git for declarative application delivery.</p>
+      <p><b>06</b> Created Kubernetes manifests for application deployment and orchestration using Pods, Deployments, Services, configuration, and health validation.</p>
+      <p><b>07</b> Deployed and troubleshot the application on Kubernetes by analyzing pod logs, Services, EndpointSlices, service connectivity, port-forwarding, and in-cluster requests.</p>
+      <p><b>08</b> Validated application behavior after deployment and resolved application-level and Kubernetes networking issues through structured troubleshooting.</p>
+    </div>
+    <div class="tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Argo CD</span><span>REST APIs</span></div>
+  </article>
+</section>
+
+<section id="education" class="section split-section">
+  <div class="section-head"><span>05</span><h2>Education</h2></div>
+  <div class="education-card">
+    <div><p class="company">AGNI COLLEGE OF TECHNOLOGY · CHENNAI</p><h3>B.E., Electronics &amp; Communication Engineering</h3></div>
+    <strong>8.73 CGPA</strong>
   </div>
 </section>
 
-<section id="projects" class="section">
-  <div class="section-label">04 / PROJECTS</div>
-  <div class="project-grid">
-    <article class="project featured">
-      <div class="project-no">01 / DEVOPS</div>
-      <h3>Employee Operations Portal</h3>
-      <p>A full-stack application taken through containerization and Kubernetes deployment. Built to practice real application-to-platform troubleshooting rather than only isolated Kubernetes commands.</p>
-      <div class="arch"><span>User</span><b>→</b><span>Application Gateway</span><b>→</b><span>AKS</span><b>→</b><span>Service / Ingress</span><b>→</b><span>Pods</span></div>
-      <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>Azure AKS</span></div>
-    </article>
-    <article class="project">
-      <div class="project-no">02 / AUTOMATION</div>
-      <h3>Operations Mail Automation</h3>
-      <p>Workflow automation using Microsoft Forms, Excel and Power Automate concepts to collect operational information, format incident data and prepare notification emails.</p>
-      <div class="tags"><span>Power Automate</span><span>Microsoft Forms</span><span>Excel</span><span>HTML tables</span></div>
-    </article>
+<section id="certification" class="section split-section">
+  <div class="section-head"><span>06</span><h2>Certification</h2></div>
+  <div class="cert-card">
+    <div><p class="company">ANTHROPIC · SEPTEMBER 2026</p><h3>Claude Developer Foundation</h3><p>Developer Foundation certification.</p></div>
+    <div class="cert-badge">CERTIFIED</div>
   </div>
 </section>
 
-<section id="certifications" class="section">
-  <div class="section-label">05 / CERTIFICATIONS</div>
-  <div class="cert">
-    <div><div class="cert-mark">✓</div></div>
-    <div><h3>Claude Developer Foundation</h3><p>Developer Foundation certification.</p></div>
-  </div>
-  <p class="note">Additional certifications and courses can be added here as they are completed.</p>
-</section>
-
-<section class="section education">
-  <div class="section-label">06 / EDUCATION</div>
-  <div class="two-col">
-    <div><h2>B.E. — Electronics & Communication Engineering</h2></div>
-    <div><p><strong>Agni College of Technology</strong><br>CGPA: 8.73</p></div>
-  </div>
-</section>
-
-<section id="contact" class="section contact">
-  <div class="section-label">07 / CONTACT</div>
-  <h2>Let's connect.</h2>
-  <p>Open to SRE, DevOps and Application Reliability opportunities.</p>
-  <div class="contact-links">
-    <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">GitHub ↗</a>
-    <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-    <a href="mailto:dineshjooy@gmail.com">Email ↗</a>
-    <a href="+91 8870463065">Phone ↗</a>
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <p class="eyebrow">07 / CONTACT</p>
+    <h2>Let's connect.</h2>
+    <p>Open to SRE, DevOps and Application Reliability opportunities.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:+918870463065">
+        <small>PHONE</small>
+        <strong>+91 8870463065</strong>
+      </a>
+      <a class="contact-card" href="mailto:dineshjooy@gmail.com">
+        <small>EMAIL</small>
+        <strong>dineshjooy@gmail.com</strong>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noreferrer">
+        <small>LINKEDIN</small>
+        <strong>View profile ↗</strong>
+      </a>
+      <a class="contact-card" href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">
+        <small>GITHUB</small>
+        <strong>View repositories ↗</strong>
+      </a>
+    </div>
   </div>
 </section>
 </main>
-<footer>© 2026 Dineshkumar Saravanan · Built with HTML & CSS · Deployed with GitHub Pages</footer>
+<footer>© 2026 Dineshkumar Saravanan · SRE / DevOps Engineer</footer>
 </body>
 </html>
