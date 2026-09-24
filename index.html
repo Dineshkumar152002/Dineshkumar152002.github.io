@@ -1,108 +1,183 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dineshkumar Saravanan — SRE / DevOps Engineer portfolio" />
-  <title>Dineshkumar S | SRE / DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dineshkumar Saravanan — SRE / DevOps Engineer portfolio">
+<title>Dineshkumar S | SRE / DevOps Engineer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="nav">
-    <a class="brand" href="#home">DS<span>.</span></a>
-    <div class="navlinks">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
-      <a href="#skills">Skills</a><a href="#contact">Contact</a>
-    </div>
-  </nav>
+<nav class="nav">
+  <a class="brand" href="#home">DS<span>.</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="eyebrow">SRE • DEVOPS • CLOUD</div>
-      <h1>Building reliable systems<br><span>that keep running.</span></h1>
-      <p class="lead">I'm <strong>Dineshkumar Saravanan</strong>, an SRE / DevOps Engineer with 2.3+ years of experience in application reliability, Kubernetes, Azure, monitoring and incident management.</p>
+<header id="home" class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">SRE / DEVOPS ENGINEER</div>
+      <h1>Keeping applications<br><span>reliable in production.</span></h1>
+      <p class="lead">Dineshkumar Saravanan — SRE-focused engineer with 2+ years of experience at TCS in application reliability, Azure/AKS operations, Kubernetes troubleshooting, observability and incident management.</p>
       <div class="actions">
-        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn primary" href="#experience">Explore experience</a>
         <a class="btn" href="assets/DineshkumarSaravanan_Resume.pdf" download>Download resume</a>
       </div>
-      <div class="quick">
-        <span>📍 Chennai, India</span><span>☁ Azure / AKS</span><span>☸ Kubernetes</span><span>⚙ CI/CD</span>
-      </div>
-    </section>
+      <div class="quick"><span>☁ Azure / AKS</span><span>☸ Kubernetes</span><span>◉ Dynatrace</span><span>⌁ Splunk</span></div>
+    </div>
+    <div class="terminal">
+      <div class="term-top"><i></i><i></i><i></i><span>~/dineshkumar</span></div>
+      <pre><span class="muted">$</span> kubectl get pods
+NAME                 READY   STATUS
+api-service          1/1     Running
+worker-service       1/1     Running
 
-    <section id="about" class="section">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="two-col">
-        <div><h2>Reliability is<br>the product.</h2></div>
-        <div>
-          <p>I'm an SRE-focused engineer at TCS, working on application reliability and operational engineering. My work spans Azure/AKS, Kubernetes, observability, REST API troubleshooting, incident response and release validation.</p>
-          <p>I enjoy troubleshooting production issues, finding root causes from logs and metrics, and improving the reliability of services through practical automation and operational discipline.</p>
-        </div>
-      </div>
-    </section>
+<span class="muted">$</span> systemctl status reliability
+<span class="ok">● operational</span>
 
-    <section id="experience" class="section">
-      <div class="section-label">02 / EXPERIENCE</div>
-      <article class="experience-card">
-        <div class="exp-head"><div><h3>TCS</h3><p>Site Reliability Engineer (SRE)</p></div><span>2.3+ YEARS</span></div>
+<span class="muted">$</span> echo "observe → diagnose → restore"
+<span class="cyan">observe → diagnose → restore</span></pre>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about" class="section">
+  <div class="section-label">01 / PROFILE</div>
+  <div class="two-col">
+    <div><h2>Application reliability<br>with an operations mindset.</h2></div>
+    <div>
+      <p>I work across application monitoring, incident response, Kubernetes troubleshooting and operational support. My day-to-day work involves turning alerts and application symptoms into actionable investigation paths, coordinating restoration and documenting the root cause.</p>
+      <p>My strongest hands-on areas are Azure/AKS, Kubernetes operations, Dynatrace, Splunk, Azure Application Insights, Linux, REST API troubleshooting and production incident management.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <div><strong>2+</strong><span>Years at TCS</span></div>
+    <div><strong>100+</strong><span>P2/P3 incidents handled</span></div>
+    <div><strong>99%</strong><span>SLA adherence</span></div>
+    <div><strong>AKS</strong><span>Cloud platform exposure</span></div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-label">02 / EXPERIENCE</div>
+  <div class="role">
+    <div class="role-top">
+      <div><div class="company">TCS</div><h3>Site Reliability Engineer (SRE)</h3><p>Application Reliability & Operations</p></div>
+      <div class="period">2+ YEARS</div>
+    </div>
+    <div class="role-body">
+      <div>
+        <h4>Production reliability</h4>
         <ul>
-          <li>Supported Azure/AKS workloads and Kubernetes-based applications, including monitoring of pods, nodes, workloads and ingress.</li>
-          <li>Used Dynatrace, Splunk, Azure Application Insights and Azure Log Stream for monitoring, alert investigation and troubleshooting.</li>
-          <li>Troubleshot REST APIs using Postman and Swagger UI and worked through application errors and latency issues.</li>
-          <li>Handled incidents from detection through resolution, including RCA, change management and ServiceNow workflows.</li>
-          <li>Resolved 100+ P2/P3 incidents while maintaining 99% SLA adherence.</li>
-          <li>Worked with Docker, Git/GitHub and CI/CD tooling including Argo CD and GitHub Actions.</li>
+          <li>Monitored application health, availability, errors, latency and infrastructure signals across production environments.</li>
+          <li>Investigated incidents involving HTTP errors, service degradation, latency and application failures, driving issues toward restoration.</li>
+          <li>Performed incident triage, impact assessment, escalation and cross-team coordination while working within SLA targets.</li>
+          <li>Participated in root-cause analysis and post-incident review activities, documenting findings and corrective actions.</li>
         </ul>
-      </article>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-label">03 / PROJECTS</div>
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-no">01</div><h3>Employee Operations Portal</h3>
-          <p>A Node.js/Express application containerized with Docker and deployed on Kubernetes/AKS. Includes MongoDB integration, Kubernetes Services and application troubleshooting.</p>
-          <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>AKS</span></div>
-        </article>
-        <article class="project">
-          <div class="project-no">02</div><h3>Autonomous Metal Detection Robot</h3>
-          <p>Embedded robotics project combining Arduino, GPS, GSM, ultrasonic sensing and metal detection for autonomous navigation and location reporting.</p>
-          <div class="tags"><span>Arduino</span><span>GPS</span><span>GSM</span><span>Sensors</span><span>Embedded C++</span></div>
-        </article>
       </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="section-label">04 / SKILLS</div>
-      <div class="skill-grid">
-        <div><h3>Cloud & Containers</h3><p>Azure · AKS · Kubernetes · Docker</p></div>
-        <div><h3>CI/CD & Automation</h3><p>Git · GitHub · GitHub Actions · Argo CD · Ansible · Terraform</p></div>
-        <div><h3>Observability</h3><p>Dynatrace · Splunk · Azure Application Insights · Monitoring & Alerting</p></div>
-        <div><h3>Development</h3><p>Linux/Unix · Shell Scripting · Python Fundamentals · Node.js · Express · SQL · REST APIs</p></div>
-        <div><h3>API & Operations</h3><p>Postman · Swagger UI · Incident Response · RCA · ServiceNow · SLA Management</p></div>
+      <div>
+        <h4>Azure & Kubernetes</h4>
+        <ul>
+          <li>Worked with Azure Kubernetes Service (AKS) environments and investigated workloads, pods, deployments, services, events and logs.</li>
+          <li>Used <code>kubectl</code> for pod/log/event investigation and service-level troubleshooting.</li>
+          <li>Worked with Kubernetes networking concepts including Services, Ingress and NodePort while troubleshooting application reachability.</li>
+          <li>Supported release validation and rollback coordination when application changes affected service behavior.</li>
+        </ul>
       </div>
-    </section>
-
-    <section class="section education">
-      <div class="section-label">05 / EDUCATION</div>
-      <div class="two-col">
-        <div><h2>B.E. — Electronics & Communication Engineering</h2></div>
-        <div><p><strong>Agni College of Technology</strong><br>CGPA: 8.73</p></div>
+      <div>
+        <h4>Observability & troubleshooting</h4>
+        <ul>
+          <li>Used Dynatrace for service health, response-time, error-rate, workload and infrastructure monitoring.</li>
+          <li>Used Splunk and Azure Application Insights / Log Stream to correlate application logs and investigate failures.</li>
+          <li>Investigated alerts such as high latency, long garbage collection, elevated errors and dependency/API-related degradation.</li>
+          <li>Used dashboards, logs, metrics and traces together rather than relying on a single signal during RCA.</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-label">06 / CONTACT</div>
-      <h2>Let's connect.</h2>
-      <p>I'm open to SRE, DevOps and Application Reliability opportunities.</p>
-      <div class="contact-links">
-        <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+      <div>
+        <h4>API & operational tooling</h4>
+        <ul>
+          <li>Validated REST APIs and application behavior using Postman and Swagger UI.</li>
+          <li>Worked with ServiceNow-based incident/change workflows, runbooks and operational documentation.</li>
+          <li>Maintained clear incident updates and collaborated with application, infrastructure and other support teams.</li>
+          <li>Focused on reducing time-to-diagnosis and restoring service safely before moving to permanent corrective actions.</li>
+        </ul>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+  <div class="flow">
+    <span>Alert</span><b>→</b><span>Impact assessment</span><b>→</b><span>Logs + metrics</span><b>→</b><span>Root cause</span><b>→</b><span>Restore</span><b>→</b><span>RCA / prevention</span>
+  </div>
+</section>
 
-  <footer>© 2026 Dineshkumar Saravanan · Built with HTML & CSS · Hosted free on GitHub Pages</footer>
+<section class="section">
+  <div class="section-label">03 / ENGINEERING TOOLKIT</div>
+  <div class="tool-grid">
+    <div><span class="tool-icon">☸</span><h3>Kubernetes / AKS</h3><p>Pods, Deployments, Services, ConfigMaps, Ingress, NodePort, logs, events and workload troubleshooting.</p></div>
+    <div><span class="tool-icon">◉</span><h3>Observability</h3><p>Dynatrace, Splunk, Azure Application Insights, alert investigation, dashboards, logs and performance analysis.</p></div>
+    <div><span class="tool-icon">▣</span><h3>Cloud & Linux</h3><p>Azure fundamentals, AKS operations, Linux/Bash and practical production troubleshooting.</p></div>
+    <div><span class="tool-icon">⇄</span><h3>Delivery & Automation</h3><p>Git/GitHub, Docker, Argo CD, GitHub Actions, Ansible and Terraform fundamentals.</p><small>Argo CD, Ansible and Terraform are also part of my ongoing hands-on learning.</small></div>
+    <div><span class="tool-icon">⌁</span><h3>API & Operations</h3><p>Postman, Swagger UI, REST APIs, ServiceNow, incident management, SLA tracking, RCA and runbooks.</p></div>
+    <div><span class="tool-icon">{} </span><h3>Development</h3><p>Python fundamentals, Node.js/Express, JavaScript, SQL and embedded C/C++ exposure through projects.</p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-label">04 / PROJECTS</div>
+  <div class="project-grid">
+    <article class="project featured">
+      <div class="project-no">01 / DEVOPS</div>
+      <h3>Employee Operations Portal</h3>
+      <p>A full-stack application taken through containerization and Kubernetes deployment. Built to practice real application-to-platform troubleshooting rather than only isolated Kubernetes commands.</p>
+      <div class="arch"><span>User</span><b>→</b><span>Application Gateway</span><b>→</b><span>AKS</span><b>→</b><span>Service / Ingress</span><b>→</b><span>Pods</span></div>
+      <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>Azure AKS</span></div>
+    </article>
+    <article class="project">
+      <div class="project-no">02 / KUBERNETES</div>
+      <h3>AKS Application Troubleshooting Lab</h3>
+      <p>Hands-on Kubernetes/AKS troubleshooting project covering deployments, pods, Services, NodePort, Ingress, logs, connectivity checks and application-level debugging.</p>
+      <div class="tags"><span>Azure AKS</span><span>Kubernetes</span><span>kubectl</span><span>Docker</span><span>Networking</span></div>
+    </article>
+    <article class="project">
+      <div class="project-no">03 / AUTOMATION</div>
+      <h3>Operations Mail Automation</h3>
+      <p>Workflow automation using Microsoft Forms, Excel and Power Automate concepts to collect operational information, format incident data and prepare notification emails.</p>
+      <div class="tags"><span>Power Automate</span><span>Microsoft Forms</span><span>Excel</span><span>HTML tables</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="certifications" class="section">
+  <div class="section-label">05 / CERTIFICATIONS</div>
+  <div class="cert">
+    <div><div class="cert-mark">✓</div></div>
+    <div><h3>Claude Developer Foundation</h3><p>Developer Foundation certification — completed with a 100% score.</p></div>
+  </div>
+  <p class="note">Additional certifications and courses can be added here as they are completed.</p>
+</section>
+
+<section class="section education">
+  <div class="section-label">06 / EDUCATION</div>
+  <div class="two-col">
+    <div><h2>B.E. — Electronics & Communication Engineering</h2></div>
+    <div><p><strong>Agni College of Technology</strong><br>CGPA: 8.73</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="section-label">07 / CONTACT</div>
+  <h2>Let's connect.</h2>
+  <p>Open to SRE, DevOps and Application Reliability opportunities.</p>
+  <div class="contact-links">
+    <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+  </div>
+</section>
+</main>
+<footer>© 2026 Dineshkumar Saravanan · Built with HTML & CSS · Deployed with GitHub Pages</footer>
 </body>
 </html>
