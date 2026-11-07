@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dineshkumar Saravanan — Site Reliability Engineer</title>
-<meta name="description" content="Dineshkumar Saravanan — Site Reliability Engineer specializing in Azure, Kubernetes, AKS, observability and production operations.">
+<meta name="description" content="Dineshkumar Saravanan — Site Reliability Engineer focused on Azure, Kubernetes, observability, DevOps and Sereno Fix full-stack engineering.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#project">Project</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="mailto:dineshjooy@gmail.com" class="nav-cta">Get in touch</a>
@@ -106,9 +106,133 @@
   </div>
 </section>
 
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">Featured Project · Full-stack product engineering</div>
+    <h2>Sereno Fix</h2>
+    <div class="project-top">
+      <p class="project-intro">A location-aware repair-services marketplace designed to help customers discover relevant repair shops, connect with service providers and manage repair enquiries. Built as a hands-on product engineering project with a strong focus on backend security, operational boundaries and containerised delivery.</p>
+      <span class="project-status"><i></i> In active development</span>
+    </div>
+    <div class="sereno-hero-image">
+      <img src="assets/sereno-fix/sereno-homepage.jpg" alt="Sereno Fix marketplace homepage interface" loading="lazy">
+      <span>Sereno Fix · Marketplace interface</span>
+    </div>
+    <div class="sereno-metrics">
+      <div><strong>16</strong><span>Database migrations</span></div>
+      <div><strong>8</strong><span>Express route modules</span></div>
+      <div><strong>20+</strong><span>Backend service modules</span></div>
+      <div><strong>32</strong><span>Test files in repository</span></div>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">01 / Problem & solution</div>
+      <h3>Repair discovery with a structured workflow</h3>
+      <p class="section-copy">Sereno Fix is designed around a common customer problem: finding a suitable repair shop based on location and repair category, then moving from discovery into an enquiry and follow-up workflow. The platform separates customer, shop and administrative capabilities, with policy checks on sensitive operations.</p>
+      <div class="feature-grid sereno-feature-grid">
+        <div class="feature"><h5>Shop discovery</h5><p>Location-aware browsing, service categories, map-based discovery and matching logic.</p></div>
+        <div class="feature"><h5>Repair enquiries</h5><p>Backend workflows for customer enquiries, shop responses and quotation-related operations.</p></div>
+        <div class="feature"><h5>Account security</h5><p>Phone OTP challenge flow, password hashing, server-side sessions and role checks.</p></div>
+        <div class="feature"><h5>Community & messaging</h5><p>Community, moderation and messaging modules with lifecycle and policy services.</p></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">02 / Application architecture</div>
+      <h3>Browser to database request path</h3>
+      <p class="section-copy">The React client communicates with an Express API. The API applies middleware and route-level policies, delegates business operations to services, and accesses PostgreSQL through a shared connection pool.</p>
+      <div class="architecture" role="img" aria-label="Architecture: Browser React and Vite frontend to Nginx reverse proxy to Express API, then PostgreSQL database; API also connects to external integrations">
+        <div class="arch-node"><b>Client</b><span>React 19 · Vite 8</span><small>UI state · fetch API</small></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-node"><b>Nginx</b><span>Web entry point</span><small>Static assets · /api proxy</small></div>
+        <div class="arch-arrow">↓</div>
+        <div class="arch-node arch-primary"><b>Node.js · Express 5</b><span>Routes · middleware · services</span><small>Authentication · validation · policies</small></div>
+        <div class="arch-split">
+          <div class="arch-node"><b>PostgreSQL 16</b><span>Relational data</span><small>Sessions · migrations · app data</small></div>
+          <div class="arch-node"><b>External services</b><span>Maps · Places · Resend</span><small>Postal lookup · SMS adapter</small></div>
+        </div>
+      </div>
+      <div class="stack-line">
+        <span>Frontend: <b>React 19 + Vite 8</b></span>
+        <span>API: <b>Node.js + Express 5</b></span>
+        <span>Database: <b>PostgreSQL 16</b></span>
+        <span>Maps: <b>Google Maps / Places + Leaflet</b></span>
+        <span>Email: <b>Resend</b></span>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">03 / Engineering implementation</div>
+      <h3>Backend structure and responsibility boundaries</h3>
+      <div class="engineering-grid">
+        <div class="engineering-card"><b>Routes</b><p>Express route modules expose API endpoints for authentication, locations, shops, enquiries, administration, community, messages and feedback.</p></div>
+        <div class="engineering-card"><b>Services</b><p>Business logic is separated into modules for OTP, users, matching, quotations, notifications, geocoding, postal lookup, moderation and audit operations.</p></div>
+        <div class="engineering-card"><b>Middleware & config</b><p>Centralised session configuration, authentication, CSRF checks, shop ownership enforcement, environment validation and security headers.</p></div>
+        <div class="engineering-card"><b>Database evolution</b><p>Versioned SQL migrations (001–016) evolve identity, marketplace, privacy, fulfilment, feedback, feature flags and Google API usage tracking.</p></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">04 / Security controls</div>
+      <h3>Security built into the API boundary</h3>
+      <div class="security-list">
+        <div><b>Argon2id</b><span>Password hashing</span></div>
+        <div><b>HMAC-SHA256</b><span>OTP challenge protection</span></div>
+        <div><b>Session regeneration</b><span>Session fixation mitigation</span></div>
+        <div><b>CSRF protection</b><span>State-changing request validation</span></div>
+        <div><b>RBAC & ownership</b><span>Role and resource-level authorization</span></div>
+        <div><b>Helmet + CSP</b><span>HTTP security headers</span></div>
+        <div><b>Rate limiting</b><span>Abuse and OTP request controls</span></div>
+        <div><b>Audit services</b><span>Security-relevant activity records</span></div>
+      </div>
+      <p class="note">SMS delivery is abstracted behind a service adapter. Development uses a mock delivery path; production Fast2SMS delivery requires the appropriate provider credentials and India DLT/sender/template approvals. Do not treat live SMS delivery as enabled.</p>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">05 / DevOps & delivery</div>
+      <h3>Containerised application and CI validation</h3>
+      <div class="delivery-grid">
+        <div class="delivery-item"><span class="delivery-index">01</span><div><b>Docker</b><p>Separate API and web images, with a multi-stage backend image and non-root runtime user.</p></div></div>
+        <div class="delivery-item"><span class="delivery-index">02</span><div><b>Docker Compose</b><p>Web, API and PostgreSQL services, service dependencies, health checks and persistent database volume.</p></div></div>
+        <div class="delivery-item"><span class="delivery-index">03</span><div><b>Nginx</b><p>Serves the frontend, supports SPA fallback and reverse-proxies API requests to the backend.</p></div></div>
+        <div class="delivery-item"><span class="delivery-index">04</span><div><b>GitHub Actions</b><p>Workflow includes backend test execution, frontend build, Docker image build and Compose configuration validation.</p></div></div>
+      </div>
+      <div class="stack-line">
+        <span>Containers: <b>Docker + Compose</b></span>
+        <span>Web server: <b>Nginx</b></span>
+        <span>CI: <b>GitHub Actions</b></span>
+        <span>Version control: <b>Git + GitHub</b></span>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="eyebrow">06 / Product interface</div>
+      <h3>Selected application screens</h3>
+      <div class="sereno-gallery">
+        <figure><img src="assets/sereno-fix/sereno-shop-discovery.jpg" alt="Sereno Fix shop discovery with map, service filters and radius controls" loading="lazy"><figcaption>Shop discovery · Google Maps, service filters and radius selection</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-independent-shops.jpg" alt="Nearby independent repair businesses discovered through Google Places" loading="lazy"><figcaption>Independent businesses · Clearly distinguished from Sereno Fix partners</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-community.jpg" alt="Sereno Fix community channels and discussion interface" loading="lazy"><figcaption>Community · Topic-based discussions</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-messages.jpg" alt="Sereno Fix repair messaging interface" loading="lazy"><figcaption>Repair messages · Customer and workshop coordination interface</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-partner-portal.jpg" alt="Sereno Fix repair partner onboarding portal" loading="lazy"><figcaption>Repair partner portal · Business onboarding entry point</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-admin-feature-flags.jpg" alt="Sereno Fix admin feature flag and kill switch controls" loading="lazy"><figcaption>Admin controls · Feature flags and operational kill switches</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-admin-feedback.jpg" alt="Sereno Fix admin feedback and satisfaction analytics" loading="lazy"><figcaption>Admin analytics · Feedback, satisfaction and issue review</figcaption></figure>
+        <figure><img src="assets/sereno-fix/sereno-google-api-usage.jpg" alt="Sereno Fix Google Maps API usage and quota monitoring dashboard" loading="lazy"><figcaption>API cost governance · Usage counters, cache and quota protection</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="project-block project-status-block">
+      <div class="eyebrow">07 / Current status & scope</div>
+      <h3>Actively developed · Not represented as production-live</h3>
+      <p class="section-copy">The repository contains the application modules, database migrations, automated tests, Docker configuration and CI workflow described above. Feature completeness, third-party production credentials, live provider delivery and public deployment are separate release concerns and are not claimed here as completed production capabilities.</p>
+      <div class="stack-line"><span>Project type: <b>Independent full-stack engineering project</b></span><span>Status: <b>In development</b></span></div>
+    </div>
+    <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noopener" class="repo-link">Explore GitHub profile ↗</a>
+  </div>
+</section>
+
 <section id="project">
   <div class="wrap">
-    <div class="eyebrow">Project</div>
+    <div class="eyebrow">Project 02</div>
     <h2>Employee Operations Portal</h2>
     <div class="project-top">
       <p>A hands-on full-stack build to get practical reps across application development, containerization, CI/CD and Kubernetes-based deployment.</p>
@@ -131,7 +255,6 @@
     <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noopener" class="repo-link">View on GitHub</a>
   </div>
 </section>
-
 <section>
   <div class="wrap">
     <div class="eyebrow">Education & Certification</div>
@@ -160,8 +283,8 @@
     <p class="lead">Open to SRE, DevOps, cloud infrastructure and platform engineering opportunities.</p>
     <div class="contact-grid">
       <a href="mailto:dineshjooy@gmail.com" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg><small>Mail</small><strong>dineshjooy@gmail.com</strong></a>
-      <a href="mob:+918870463065" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><small>Phone</small><strong>+91 88704 63065</strong></a>
-      <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noopener" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg><small>LinkedIn</small><strong>View Profile</strong></a>
+      <a href="tel:+918870463065" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><small>Phone</small><strong>+91 88704 63065</strong></a>
+      <a href="https://www.linkedin.com/in/dineshkumar-saravanan-97217a194" target="_blank" rel="noopener" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg><small>LinkedIn</small><strong>View profile</strong></a>
       <a href="https://github.com/Dineshkumar152002" target="_blank" rel="noopener" class="contact-cell"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2c-3.16.7-3.83-1.35-3.83-1.35-.52-1.3-1.27-1.65-1.27-1.65-1.03-.7.08-.7.08-.7 1.14.08 1.74 1.17 1.74 1.17 1.02 1.73 2.66 1.23 3.31.95.1-.74.4-1.24.72-1.53-2.52-.28-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.5-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.61 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55 4.51-1.5 7.77-5.76 7.77-10.78C23.25 5.48 18.27.5 12 .5z"/></svg><small>GitHub</small><strong>View Profile</strong></a>
     </div>
   </div>

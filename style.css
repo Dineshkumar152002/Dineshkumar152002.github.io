@@ -129,3 +129,64 @@
 
   :focus-visible{outline:2px solid var(--ok);outline-offset:2px;}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+/* ---- Sereno Fix featured project ---- */
+.project-intro{max-width:66ch!important;}
+.project-status{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(234,179,92,.35);color:var(--warn);font:12px 'IBM Plex Mono';padding:8px 11px;white-space:nowrap;}
+.project-status i{width:7px;height:7px;border-radius:50%;background:var(--warn);display:inline-block;}
+.sereno-hero-image{position:relative;border:1px solid var(--line);background:var(--panel);margin:26px 0 1px;overflow:hidden;}
+.sereno-hero-image img{display:block;width:100%;height:auto;max-height:510px;object-fit:cover;object-position:top;}
+.sereno-hero-image span{display:block;padding:10px 14px;color:var(--dim-2);font:11px 'IBM Plex Mono';border-top:1px solid var(--line);}
+.sereno-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:0;}
+.sereno-metrics div{background:var(--panel);padding:17px 18px;}
+.sereno-metrics strong{display:block;color:var(--ok);font:600 23px 'IBM Plex Mono';}
+.sereno-metrics span{display:block;color:var(--dim);font-size:12px;margin-top:4px;}
+.project-block{margin-top:48px;}
+.project-block h3{font:500 19px 'IBM Plex Mono';margin:0 0 13px;}
+.section-copy{color:var(--dim);max-width:76ch;margin-bottom:22px;font-size:14.5px;}
+.sereno-feature-grid{grid-template-columns:repeat(4,1fr);}
+.architecture{border:1px solid var(--line);background:var(--panel-2);padding:22px;max-width:740px;margin:24px auto;}
+.arch-node{border:1px solid rgba(73,214,156,.28);background:var(--panel);padding:14px 16px;text-align:center;max-width:440px;margin:0 auto;}
+.arch-node b,.arch-node span,.arch-node small{display:block;}
+.arch-node b{font:600 14px 'IBM Plex Mono';color:var(--text);}
+.arch-node span{font-size:13px;color:var(--ok);margin-top:4px;}
+.arch-node small{font-size:11.5px;color:var(--dim-2);margin-top:3px;}
+.arch-primary{border-color:var(--ok);box-shadow:0 0 0 1px rgba(73,214,156,.08);}
+.arch-arrow{text-align:center;color:var(--ok);font:20px 'IBM Plex Mono';padding:4px;}
+.arch-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;position:relative;}
+.arch-split:before{content:"";position:absolute;left:25%;right:25%;top:-8px;border-top:1px solid rgba(73,214,156,.35);}
+.arch-split .arch-node{width:100%;}
+.engineering-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.engineering-card{background:var(--panel);padding:20px;}
+.engineering-card b{font:600 13px 'IBM Plex Mono';color:var(--ok);}
+.engineering-card p{color:var(--dim);font-size:13.5px;margin-top:8px;}
+.security-list{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.security-list div{background:var(--panel);padding:15px;}
+.security-list b,.security-list span{display:block;}
+.security-list b{font:500 12px 'IBM Plex Mono';color:var(--ok);}
+.security-list span{font-size:12px;color:var(--dim);margin-top:5px;}
+.note{margin-top:16px;padding:14px 16px;border-left:2px solid var(--warn);background:rgba(234,179,92,.06);color:var(--dim);font-size:13px;}
+.delivery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0;}
+.delivery-item{display:flex;gap:14px;background:var(--panel);padding:18px;}
+.delivery-index{font:12px 'IBM Plex Mono';color:var(--ok);}
+.delivery-item b{font-size:14px;}
+.delivery-item p{font-size:13px;color:var(--dim);margin-top:5px;}
+.sereno-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.sereno-gallery figure{border:1px solid var(--line);background:var(--panel);overflow:hidden;}
+.sereno-gallery img{display:block;width:100%;height:auto;}
+.sereno-gallery figcaption{padding:10px 12px;color:var(--dim);font:11px 'IBM Plex Mono';border-top:1px solid var(--line);}
+.project-status-block{border:1px solid var(--line);background:var(--panel-2);padding:22px;}
+.project-status-block .stack-line{margin:0;}
+#project{padding-top:48px;}
+@media(max-width:720px){
+ .sereno-metrics{grid-template-columns:repeat(2,1fr);}
+ .sereno-feature-grid{grid-template-columns:repeat(2,1fr);}
+ .security-list{grid-template-columns:repeat(2,1fr);}
+ .sereno-gallery{grid-template-columns:1fr;}
+}
+@media(max-width:520px){
+ .engineering-grid,.delivery-grid{grid-template-columns:1fr;}
+ .arch-split{grid-template-columns:1fr;}
+ .arch-split:before{display:none;}
+ .architecture{padding:14px;}
+ .project-status{white-space:normal;}
+}
